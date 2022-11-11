@@ -1,4 +1,4 @@
-body, ul, h1, h2, h5, p,li {
+body, ul, h1, h2, h5, p,li, h4{
     margin: 0;
     padding: 0;
 }
@@ -476,9 +476,91 @@ body, ul, h1, h2, h5, p,li {
 #pricing .card{
     padding: 32px;
     border-radius: 24px;
-    
+}
+#pricing .pricing-box{
+    display: flex;
+    padding: 32px;
+    gap: 12px;
+    border-bottom: #FFFFFF;
 }
 
+#pricing .pricing-box .icon-box{
+    background-color: black;
+    padding: 14px;
+    border-radius: 12px;
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+#pricing .pricing-box .icon-box img{
+    width: 44px;
+    height: 44px;
+}
+#pricing .card .price{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: start;
+    align-items: start;
+}
 
+#pricing .card .price .badge{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    /* Yellow */
+    
+    color: #EDCB50;
+}
+#pricing .card .price .info{
+    display: flex;
+    gap: 8px;
+    justify-content: end;
+    align-items: flex-end;
+}
+#pricing .card .price .info h4{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 42px;
+    /* identical to box height, or 100% */
+    
+    
+    /* Color/500 */
+    
+    color: #293241;
+}
 
+#pricing .card .price .info h4 span{
+    font-size: 24px;
+}
+
+#pricing .card .price .info > span{
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: inline-block;
+    margin-bottom: 8px;
+    /* identical to box height */
+    
+    
+    /* Color/400 */
+    
+    color: #545B67;
+}
+
+#pricing .card.yellow .pricing-box .icon-box{
+    background-color: #EDCB50;
+}
