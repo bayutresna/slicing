@@ -9,35 +9,40 @@ body, ul, h1, h2, h5, p,li, h4{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 100px;
     /* flex-wrap: wrap; */
 }
 .container .title{
     margin-bottom: 70px;
 }
-.container .title .h5
+
 .col{
     padding: 0 12px;
+    box-sizing: border-box;
+}
+.col-1{
+    width: calc(100% * 1 / 12);
 }
 .col-4{
-    width:calc(100%/3-24px);
+    width:calc(100% / 3);
 }
 .col-3{
-    width: calc(100%/4-24px);
+    width: calc(100% / 4);
 }
 .col-8{
-    width: calc(100% * 2/3 - 24px);
+    width: calc(100% * 2 / 3);
 }
 .col-10{
-    width: calc(100% *5/6 -24px);
+    width: calc(100% * 5 / 6);
 }
 
 .col-6{
-    width: calc(50%-24px);
+    width: calc(50%);
 }
 /* navbar */
 #navbar{
     /* padding : (vertical) (horizontal) */
-    padding: 62px 0;
+    padding: 50px 0;
     position: absolute;
     width: 100%;
 }
@@ -48,7 +53,7 @@ body, ul, h1, h2, h5, p,li, h4{
     padding: 0 12px;
 }
 #navbar .logo img {
-    height:60px;
+    height:30px;
     width: auto;
 }
 #navbar .menu{
@@ -68,11 +73,6 @@ body, ul, h1, h2, h5, p,li, h4{
     margin: 0 24px;
 }
 #navbar ul li a {
-    font-family: 'Anybody';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 17px;
     color: #FFFF;
     text-decoration: none;
 }
@@ -440,7 +440,7 @@ body, ul, h1, h2, h5, p,li, h4{
 }
 
 #pricing{
-
+    background-color: #F0F9FF;
 }
 #pricing .container{
     padding-top: 150px;
@@ -476,6 +476,10 @@ body, ul, h1, h2, h5, p,li, h4{
 #pricing .card{
     padding: 32px;
     border-radius: 24px;
+    box-sizing: border-box;
+    background: white;
+    padding: 0 12px;
+    margin: 0px 12px;
 }
 #pricing .pricing-box{
     display: flex;
@@ -483,10 +487,18 @@ body, ul, h1, h2, h5, p,li, h4{
     gap: 12px;
     border-bottom: #FFFFFF;
 }
+#pricing .card.blue .pricing-box{
+    display: flex;
+    padding: 32px;
+    gap: 12px;
+    border-bottom: #FFFFFF;
+    background-image: url(img/Group.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 
 #pricing .pricing-box .icon-box{
     background-color: black;
-    padding: 14px;
     border-radius: 12px;
     width: 72px;
     height: 72px;
@@ -498,6 +510,7 @@ body, ul, h1, h2, h5, p,li, h4{
 #pricing .pricing-box .icon-box img{
     width: 44px;
     height: 44px;
+    padding: 14px;
 }
 #pricing .card .price{
     display: flex;
@@ -507,7 +520,7 @@ body, ul, h1, h2, h5, p,li, h4{
     align-items: start;
 }
 
-#pricing .card .price .badge{
+#pricing .card.yellow .price .badge{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -520,6 +533,34 @@ body, ul, h1, h2, h5, p,li, h4{
     /* Yellow */
     
     color: #EDCB50;
+}
+#pricing .card.blue .price .badge{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    /* blue */
+    
+    color: #1681FE;
+}
+#pricing .card.green .price .badge{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    /* Yellow */
+    
+    color: #448C74;
 }
 #pricing .card .price .info{
     display: flex;
@@ -560,7 +601,197 @@ body, ul, h1, h2, h5, p,li, h4{
     
     color: #545B67;
 }
+#pricing .card{
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
 
 #pricing .card.yellow .pricing-box .icon-box{
     background-color: #EDCB50;
 }
+
+#pricing .card.yellow:hover{
+    border: 2px solid #EDCB50;
+}
+
+#pricing .card.blue .pricing-box .icon-box{
+    background-color: #1681FE;
+}
+
+#pricing .card.blue:hover{
+    border: 2px solid #1681FE;
+}
+
+#pricing .card.green .pricing-box .icon-box{
+    background-color: #448C74;;
+}
+
+#pricing .card.green:hover{
+    border: 2px solid #448C74;;
+}
+#pricing .fitur{
+padding: 50px 0;
+}
+
+#pricing .fitur ul li{
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    /* identical to box height */    
+    /* Color/500 */
+    color: #293241;
+    padding-bottom: 16px;
+    padding-left: 32;
+}
+
+#pricing .fitur ul.ceklis li, #pricing .fitur ul.notlist li {
+    list-style: none;
+}
+
+#pricing .fitur ul.ceklis.yellow li::before {
+    content: " ";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../slicing/img/icons/ceklisyellow.png);
+    margin-right: 12px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#pricing .fitur ul.ceklis.blue li::before {
+    content: " ";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../slicing/img/icons/ceklisblue.png);
+    margin-right: 12px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#pricing .fitur ul.ceklis.green li::before {
+    content: " ";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../slicing/img/icons/Approve.png);
+    margin-right: 12px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#pricing .fitur ul.notlist li::before {
+    content: " ";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../slicing/img/icons/Close.png);
+    margin-right: 12px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#pricing .card.yellow .button{
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #EDCB50;
+    border-radius: 12px;
+    padding : 14px 145px;
+}
+
+#pricing .card.yellow .button a{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+
+    /* Yellow */
+    color: #EDCB50;
+}
+
+#pricing .card.blue .button{
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #1681FE;
+    border-radius: 12px;
+    padding : 14px 145px;
+}
+
+#pricing .card.blue .button a{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+
+    /* Yellow */
+    color: #1681FE;
+}
+#pricing .card.green .button{
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #448C74;
+    border-radius: 12px;
+    padding : 14px 145px;
+}
+
+#pricing .card.green .button a{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+
+    /* Yellow */
+    color: #448C74;
+}
+
+/* #pricing .card.yellow .button:hover, #pricing .card.yellow .button a:hover{
+  background-color: #EDCB50;
+  color: white;
+} */
+
+#testimoni{
+    padding-top: 150px;
+}
+#testimoni .title h5{
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 50px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #293241;
+}
+
+#testimoni .title > p{
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 25px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    /* Color/300 */
+    
+    color: #7F848D;
+}
+
+
+
+
+
+
+
