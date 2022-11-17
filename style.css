@@ -155,6 +155,7 @@ body, ul, h1, h2, h5, p,li, h4{
     width: 100%;
     margin : 0;
     
+    
 }
 
 #hero .content .getting-started input{
@@ -790,8 +791,199 @@ padding: 50px 0;
 }
 
 
+#testimoni .container{
+    flex-direction: column;
+}
+#testimoni .testi {
+    display: flex;
+}
+#testimoni .arrow-left{
+    margin-top: 200px;
+    background-color: #D4D6D9;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-right: 68px;
+    margin-left: 12px;
+}
+#testimoni .arrow-right{
+    margin-top: 200px;
+    background-color: #1C51FD;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-left: 68px;
+    margin-right: 12px;
+}
 
+#testimoni .review{
+    display: flex;
+    background-color: #F0F9FF;
+    padding: 32px 32px;
+}
 
+#testimoni .content{
+    padding: 0 36px;
+}
+#testimoni .content h3{
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #212834;
+}
 
+#testimoni .content h4{
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #7F848D;
+    padding-bottom: 21px;
+}
 
+#testimoni .content p{
+    padding-top: 24px;
+    color: #293241;
+    font-family: 'Anybody';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 22px;    
+}
 
+#flow{
+    margin-top: 150px;
+    background-color: #293241;
+    justify-content: space-between;
+}
+
+#flow .left{
+    padding-top: 91px;
+    padding-right: 95px;
+    padding-left: 60px;
+}
+#flow .left h1{
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    color: #FFFFFF;
+}
+#flow .left p{
+    padding-top: 24px;
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color: #EAEBEC;
+}
+#flow .button{
+    padding: 0 12px;
+    padding-top: 32px;
+    padding-bottom: 90px;
+    width: 237px;
+}
+#flow .button a {
+    display: flex;
+    padding: 14px 24px;
+    
+    background: #ffff;
+    gap: 8px;
+    align-items: center;
+    
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    border-radius: 15px;
+
+    text-decoration: none;
+    color: #293241;
+}
+
+#flow .right{
+    padding-top: 65px;
+}
+
+#footer{
+    padding-top: 294px;
+}
+#footer .container{
+justify-content: space-between;
+}
+#footer .line{
+    
+}
+#footer .card{
+    padding-right: 172px;
+}
+
+#footer .card p{
+    padding-top: 15px;
+    padding-bottom: 24px;
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #7F848D;
+}
+
+#footer .card span{
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #293241;
+}
+
+#footer .card ul{
+    
+}
+
+#footer .card ul li{
+    list-style-type: none;
+    padding-top: 16px;
+}
+
+#footer .card ul li a{
+    text-decoration: none;
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #7F848D;
+}
+#footer .title{
+    margin: 0 0;
+}
+
+#footer .title p{
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #293241;
+}
+#footer .list{
+    padding-bottom: 32px;
+    display: flex;
+    gap: 16px;  
+    padding-top: 18px;
+    padding-right: 12px;
+}
+
+#footer .list .image{
+    background: #EAEBEC;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    display: flex;
+}
+
+#footer .list .image img{
+    justify-content: center;
+    padding: 10px 10px;
+}
